@@ -376,6 +376,16 @@ h2 em {
   color: var(--gold);
   line-height: 1;
 }
+.price-parcela {
+  font-size: .78rem;
+  color: rgba(245,240,232,.6);
+  margin-top: .4rem;
+  line-height: 1.4;
+}
+.price-parcela strong {
+  color: var(--gold-light);
+  font-weight: 700;
+}
 
 
 .card-btn {
