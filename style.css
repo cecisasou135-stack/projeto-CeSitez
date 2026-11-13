@@ -298,7 +298,6 @@ h2 em {
 .servicos h2 { color: var(--cream); }
 .servicos h2 em { color: var(--gold-light); }
 .servicos .section-sub { color: rgba(245,240,232,.55); }
-.servicos .obs { color: rgba(245,240,232,.4); font-size: .75rem; font-style: italic; margin-top: 1rem; }
 
 .cards-grid {
   display: grid;
@@ -378,22 +377,6 @@ h2 em {
   line-height: 1;
 }
 
-.manutencao-badge {
-  background: rgba(201,168,76,.12);
-  border: 1px solid rgba(201,168,76,.25);
-  border-radius: 12px;
-  padding: .6rem .9rem;
-  font-size: .78rem;
-  color: var(--gold-light);
-  font-weight: 600;
-  line-height: 1.5;
-}
-.manutencao-badge small {
-  display: block;
-  font-size: .68rem;
-  color: rgba(226,201,126,.6);
-  font-weight: 400;
-}
 
 .card-btn {
   display: block;
@@ -613,4 +596,54 @@ h2 em {
 .portfolio-card h4,
 .portfolio-card p {
   text-decoration: none !important;
+}
+
+/* ---------- CATEGORIAS DO PORTFÓLIO ---------- */
+.portfolio-categoria {
+  margin-bottom: 3.5rem;
+}
+
+.categoria-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.categoria-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.categoria-titulo {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  flex-shrink: 0;
+}
+
+.categoria-linha {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* card vazio */
+.portfolio-card-vazio {
+  opacity: .5;
+  cursor: default;
+  pointer-events: none;
+}
+
+.proj-img-vazio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream-dark) !important;
+  border: 2px dashed var(--border);
+  color: var(--text-muted);
+  font-size: .85rem;
+  letter-spacing: .05em;
 }
