@@ -301,7 +301,7 @@ h2 em {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
   gap: 1.5rem;
   margin: 2.5rem 0 1rem;
 }
@@ -385,6 +385,33 @@ h2 em {
 .price-parcela strong {
   color: var(--gold-light);
   font-weight: 700;
+}
+
+/* ---------- CARD COMBO (10% OFF) ---------- */
+.service-card-combo {
+  position: relative;
+  border-color: var(--gold);
+  grid-column: 1 / -1;   /* ocupa a linha inteira... */
+  justify-self: center;  /* ...e fica centralizado */
+}
+.service-card-combo:hover { border-color: var(--gold-light); }
+.combo-badge {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: var(--gold);
+  color: var(--green-dark);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  padding: .35rem .8rem;
+  border-radius: 999px;
+}
+.price-old {
+  color: rgba(245,240,232,.6);
+  text-decoration: line-through;
+  text-decoration-color: var(--purple-light);
+  text-decoration-thickness: 2px;
 }
 
 
@@ -792,4 +819,9 @@ h2 em {
   color: var(--text-muted);
   font-size: .85rem;
   letter-spacing: .05em;
+}
+/* sinal de + entre os emojis do card combo */
+.combo-plus {
+  color: var(--gold);
+  font-weight: 700;
 }
