@@ -592,6 +592,13 @@ h2 em {
   align-items: start;
 }
 
+/* Card que sobra sozinho na última linha fica centralizado (só no layout de 3 colunas) */
+@media (min-width: 769px) {
+  .portfolio-card:last-child:nth-child(3n+1) {
+    grid-column: 2;
+  }
+}
+
 .portfolio-card {
   border-radius: 20px;
   overflow: hidden;
